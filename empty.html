@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vanitas</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&family=Kosugi&family=Roboto&display=swap" rel="stylesheet"
+</head>
+<body>
+<div>
+    <h1 class="title">Vanitas</h1>
+    <h3 class="subtitle">"全自動"クトゥルフ(N)PC作成ツール</h3>
+    <p><input class="gen_btn" type="button" value="生成" onClick = "getDice();"></p>
+    <p>
+        名前:<span id="name">?</span>,
+        職業:<span id="job">?</span>
+    </p>
+    <p>
+        STR:<span id="str">?</span>,
+        CON:<span id="con">?</span>,
+        POW:<span id="pow">?</span>,
+        DEX:<span id="dex">?</span>,
+        APP:<span id="app">?</span>,
+        SIZ:<span id="siz">?</span>,
+        INT:<span id="intel">?</span>,
+        EDU:<span id="edu">?</span>,
+        年収・財産:<span id="money">?</span>
+    </p>
+    <p>
+        SAN:<span id="san">?</span>,
+        幸運:<span id="luck">?</span>,
+        アイデア:<span id="idea">?</span>,
+        知識:<span id="know">?</span>,
+        HP:<span id="hp">?</span>,
+        MP:<span id="mp">?</span>
+    </p>
+    <p>
+        職業技能ポイント:<span id="occup_pt">?</span>
+        趣味技能ポイント:<span id="hobby_pt">?</span>
+    </p>
+    <p>
+      <div id ="skills_container"></div>  
+    </p>
+</div>
+<script src="data.js" type="text/javascript"></script>
+<script src="script.js" type="text/javascript"></script>
+
+</body>
+</html>
