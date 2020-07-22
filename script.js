@@ -75,7 +75,9 @@ function chooseSkills(occup, hobby){
     //適当にいくつか技能を選択
     for (let i = 0; i<getRandomInt(4,14); i++){
         let rand = Math.floor(Math.random() * skills.length);
-        selected_skills.push(skills[rand]);
+        if (skills[rand].indexOf(selected_skills) == -1){
+            selected_skills.push(skills[rand]);
+        }
     }
     //ポイントのぶんだけ、選択した技能に値を振っていく
     for (let i = 0; i < occup+hobby; i++){
